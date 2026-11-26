@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stride &amp; Leash Co. — Static frontend demonstration of a Dog Walking Service landing page."
+    />
+    <title>Stride &amp; Leash Co. | Dog Walking Service Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#main-content" aria-label="Stride and Leash Co. home">
+          <span class="brand-mark" aria-hidden="true">S&amp;L</span>
+          <span class="brand-name">Stride &amp; Leash Co.</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#booking-section">Request Walk</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Frontend Demonstration · Static Landing Page</p>
+            <h1 id="hero-heading">Structured daily dog walks built around your workday.</h1>
+            <p class="hero-lead">
+              A static landing page demonstration for a fictional dog walking service, showcasing
+              scheduled plan previews, accessible form validation, and client-side state updates.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#booking-section">Request a Walk Demo</a>
+              <a class="btn btn-secondary" href="#services-section">Explore Services</a>
+            </div>
+          </div>
+
+          <aside class="hero-summary" aria-label="Demonstration overview">
+            <h2 class="summary-title">Demonstration Scope</h2>
+            <dl class="metrics-list">
+              <div class="metric-item">
+                <dt>Service Tiers</dt>
+                <dd>3 Sample Plans</dd>
+              </div>
+              <div class="metric-item">
+                <dt>Form Handling</dt>
+                <dd>Client-Side Validation</dd>
+              </div>
+              <div class="metric-item">
+                <dt>Backend Storage</dt>
+                <dd>None (In-Memory Demo)</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services-section" class="section" aria-labelledby="services-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Sample Service Plans</p>
+            <h2 id="services-heading">Predictable care tiers for every routine</h2>
+            <p class="section-subtitle">
+              Illustrative walk tiers demonstrating how session durations and care options are
+              presented in this static frontend demo.
+            </p>
+          </header>
+
+          <div class="card-grid">
+            <article class="card">
+              <h3>Solo Walk (30 Min)</h3>
+              <p class="card-price">Sample Rate: $28</p>
+              <p>
+                Example one-on-one neighborhood walk layout paced for senior dogs, leash-sensitive
+                dogs, or quick midday breaks.
+              </p>
+              <ul class="feature-list">
+                <li>Single-dog walk format</li>
+                <li>Neighborhood route option</li>
+                <li>Water &amp; feeding note field</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Extended Solo (60 Min)</h3>
+              <p class="card-price">Sample Rate: $44</p>
+              <p>
+                Example full-hour walk layout combining steady exercise, park routing, and calm
+                leash pacing.
+              </p>
+              <ul class="feature-list">
+                <li>Park or shaded trail option</li>
+                <li>Extended walk duration</li>
+                <li>Optional care notes preview</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Puppy Check-In (30 Min)</h3>
+              <p class="card-price">Sample Rate: $30</p>
+              <p>
+                Example midday visit layout for puppies practicing short leash routines and quiet
+                breaks.
+              </p>
+              <ul class="feature-list">
+                <li>Midday break scheduling</li>
+                <li>Meal &amp; water note option</li>
+                <li>Short-session pacing</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section" class="section section-muted" aria-labelledby="about-heading">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">About This Demo</p>
+            <h2 id="about-heading">Monochromatic layout built for clarity and accessibility</h2>
+            <p>
+              Stride &amp; Leash Co. is a fictional service concept created for this static frontend
+              demonstration (Ticket ENG-11833). No real bookings are processed and no company
+              guarantees or live operational claims are represented.
+            </p>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <h3>1. Semantic Structure</h3>
+              <p>Landmark regions, a skip link, and visible focus styles support keyboard and screen-reader navigation.</p>
+            </div>
+            <div class="pillar">
+              <h3>2. Safe Input Handling</h3>
+              <p>Required fields, email checks, and input sanitization run in browser JavaScript before updating local state.</p>
+            </div>
+            <div class="pillar">
+              <h3>3. Pure Static Stack</h3>
+              <p>Built exclusively with vanilla HTML5, CSS custom properties, and modular browser JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking-section" class="section" aria-labelledby="booking-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Interactive Frontend Demonstration</p>
+            <h2 id="booking-heading">Schedule a Walk Request</h2>
+            <p class="section-subtitle">
+              This static landing page demonstrates client-side validation, input sanitization,
+              empty states, and simulated loading feedback. No data is sent to a backend server.
+            </p>
+          </header>
+
+          <div class="booking-layout">
+            <form
+              id="booking-form"
+              class="booking-form"
+              aria-labelledby="booking-heading"
+              aria-busy="false"
+              novalidate
+            >
+              <div class="form-field">
+                <label for="owner-name">Owner Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  id="owner-name"
+                  name="ownerName"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="e.g. Alex Rivera"
+                  aria-describedby="owner-name-error"
+                  required
+                />
+                <p id="owner-name-error" class="field-error" data-error-for="owner-name"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="owner-email">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  id="owner-email"
+                  name="ownerEmail"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="name@example.com"
+                  aria-describedby="owner-email-error"
+                  required
+                />
+                <p id="owner-email-error" class="field-error" data-error-for="owner-email"></p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="dog-name">Dog Name <span aria-hidden="true">*</span></label>
+                  <input
+                    id="dog-name"
+                    name="dogName"
+                    type="text"
+                    placeholder="e.g. Bruno"
+                    aria-describedby="dog-name-error"
+                    required
+                  />
+                  <p id="dog-name-error" class="field-error" data-error-for="dog-name"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="service-tier">Service Plan <span aria-hidden="true">*</span></label>
+                  <select
+                    id="service-tier"
+                    name="serviceTier"
+                    aria-describedby="service-tier-error"
+                    required
+                  >
+                    <option value="solo-walk">Solo Walk (30 Min)</option>
+                    <option value="extended-solo">Extended Solo (60 Min)</option>
+                    <option value="puppy-checkin">Puppy Check-In (30 Min)</option>
+                  </select>
+                  <p id="service-tier-error" class="field-error" data-error-for="service-tier"></p>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="walk-date">Preferred Walk Date <span aria-hidden="true">*</span></label>
+                <input
+                  id="walk-date"
+                  name="walkDate"
+                  type="date"
+                  aria-describedby="walk-date-error"
+                  required
+                />
+                <p id="walk-date-error" class="field-error" data-error-for="walk-date"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="walk-notes">Care &amp; Leash Notes (Optional)</label>
+                <textarea
+                  id="walk-notes"
+                  name="notes"
+                  rows="3"
+                  placeholder="Shaded routes, gate codes, or hydration preferences..."
+                  aria-describedby="walk-notes-error"
+                ></textarea>
+                <p id="walk-notes-error" class="field-error" data-error-for="walk-notes"></p>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Walk Request</button>
+                <div
+                  class="loading-indicator"
+                  data-testid="loading-indicator"
+                  role="status"
+                  hidden
+                >
+                  <span class="spinner" aria-hidden="true"></span>
+                  <span>Processing demo request...</span>
+                </div>
+              </div>
+
+              <div
+                class="status-banner"
+                role="status"
+                aria-live="polite"
+                data-testid="form-status"
+              ></div>
+            </form>
+
+            <aside class="requests-panel" aria-labelledby="requests-heading">
+              <h3 id="requests-heading">Scheduled Walk Requests (Demo State)</h3>
+              <p class="panel-caption">
+                Submitted requests are sanitized and held in local browser memory only.
+              </p>
+
+              <p class="empty-state" data-testid="empty-state">
+                No data found. Submit the demonstration form to preview a walk request.
+              </p>
+
+              <ul class="request-list" data-testid="request-list" aria-live="polite"></ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">Stride &amp; Leash Co.</p>
+          <p class="footer-note">Static Frontend Assignment Demo — Ticket ENG-11833</p>
+        </div>
+        <address class="footer-contact">
+          <span>Contact: <a href="mailto:care@strideandleash.example">care@strideandleash.example</a></span>
+          <span>Phone: <a href="tel:+15550194820">+1 (555) 019-4820</a></span>
+          <span>Hours: Mon–Sat, 07:00–19:00</span>
+        </address>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
